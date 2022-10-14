@@ -22,7 +22,8 @@ public class Main {
             total = accumulation + total;
             month++;
 
-        } System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
+        } System.out.printf("Месяц %d, сумма накоплений равна %.0f рублей. \n", month, total);
+        System.out.println("------------------------------------------------------------------");
     }
 
 
@@ -37,6 +38,8 @@ public class Main {
         for (; i > 0; i--) {
             System.out.print(i + " ");
         }
+        System.out.println();
+        System.out.println("------------------------------------------------------------------");
     }
 
     public static void task3() {
@@ -45,8 +48,9 @@ public class Main {
             float birthIncrease = population * 17 / 1000;
             float deathDecrease = population * 8 / 1000;
             population = population + birthIncrease - deathDecrease;
-            System.out.println("Год " + i + ", численность населения составляет " + population);
+            System.out.printf("Год %d, численность населения составляет %.0f. \n", i, population);
         }
+        System.out.println("------------------------------------------------------------------");
     }
 
     public static void task2_1() {
@@ -57,9 +61,9 @@ public class Main {
             i++;
             accumulation = accumulation + accumulation * percentage;
 
-            System.out.println("Через " + i + " месяцев сумма вклада составит " + accumulation + " рублей");
+            System.out.printf("Через %d месяцев сумма вклада составит %.0f рублей. \n", i, accumulation);
         }
-
+        System.out.println("------------------------------------------------------------------");
     }
 
     public static void task2_2() {
@@ -70,10 +74,10 @@ public class Main {
             i++;
             accumulation = accumulation + accumulation * percentage;
             if (i % 6 == 0) {
-                System.out.println("Через " + i + " месяцев сумма вклада составит " + accumulation + " рублей");
+                System.out.printf("Через %d месяцев сумма вклада составит %.0f рублей. \n",  i, accumulation);
             }
         }
-
+        System.out.println("------------------------------------------------------------------");
     }
 
     public static void task2_3() {
@@ -84,10 +88,10 @@ public class Main {
             i++;
             accumulation = accumulation + accumulation * percentage;
             if (i % 6 == 0) {
-                System.out.println("Через " + i + " месяцев сумма вклада составит " + accumulation + " рублей");
+                System.out.printf("Через %d месяцев сумма вклада составит %.0f рублей. \n",  i, accumulation);
             }
         }
-
+        System.out.println("------------------------------------------------------------------");
     }
 
     public static void task2_4() {
@@ -95,6 +99,7 @@ public class Main {
         for (int friday = 7; friday <= 31; friday += 7) {
             System.out.println("Сегодня пятница " + friday + "-е число. Необходимо подготовить отчет.");
             }
+        System.out.println("------------------------------------------------------------------");
     }
 
     public static void task3_1() {
@@ -106,6 +111,7 @@ public class Main {
                 System.out.println(date);
             }
         }
+        System.out.println("------------------------------------------------------------------");
     }
 
     public static void task3_2() {
@@ -113,6 +119,7 @@ public class Main {
             int multiplication = 2;
             System.out.println(multiplication + " * " + number + " = " + multiplication * number);
             }
-        }
+        System.out.println("------------------------------------------------------------------");
+    }
 
 }
