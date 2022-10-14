@@ -45,7 +45,7 @@ public class Main {
             float birthIncrease = population * 17 / 1000;
             float deathDecrease = population * 8 / 1000;
             population = population + birthIncrease - deathDecrease;
-            System.out.println("Год " + i + ", численность населения составляет " + population);
+            System.out.printf("Год %d, численность населения составляет %.0f. \n", i, population);
         }
     }
 
